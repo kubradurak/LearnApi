@@ -21,6 +21,9 @@ import retrofit2.Response;
 public class PhotosActivity extends AppCompatActivity {
     List<Photos> list;
     ListView listView;
+    //---------------------------------------------------------------------------------
+    /////////////////////////////////PİCASSO KULLANILDI//////////////////////////////
+    //---------------------------------------------------------------------------------
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

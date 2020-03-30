@@ -48,7 +48,7 @@ public class AdapterPhotos extends BaseAdapter {
         ImageView img = v.findViewById(R.id.img);
 
 
-        albumId.setText(albumId.getText()+ ""+ photosList.get(position).getAlbumId());
+        albumId.setText(""+ photosList.get(position).getAlbumId());
         id.setText(id.getText()+""+photosList.get(position).getId());
         Picasso.with(v.getContext()).load(photosList.get(position).getThumbnailUrl()).into(img);
 

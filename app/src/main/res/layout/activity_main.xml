@@ -4,27 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-    <Button
-        android:id="@+id/btn_bilgiler"
-        android:layout_width="wrap_content"
-        android:text="Bilgi"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/btn_todo"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TODO" />
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/btn_bilgiler"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Bilgi" />
 
+        <Button
+            android:id="@+id/btn_todo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="TODO" />
 
 
     </LinearLayout>
@@ -32,16 +32,37 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-    <Button
-        android:layout_width="wrap_content"
-        android:id="@+id/btn_photos"
-        android:text="PHOTOS"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/btn_photos"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="PHOTOS" />
+
+        <Button
+            android:id="@+id/btn_comments"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="COMMENTS" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_add_bilgi"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="BİLGİ EKLE" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
     </LinearLayout>
 </LinearLayout>

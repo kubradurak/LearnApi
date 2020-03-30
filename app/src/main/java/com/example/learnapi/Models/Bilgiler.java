@@ -6,6 +6,12 @@ public class Bilgiler{
 	private String body;
 	private int userId;
 
+	public Bilgiler(String title, String body, int userId) {
+		this.title = title;
+		this.body = body;
+		this.userId = userId;
+	}
+
 	public void setId(int id){
 		this.id = id;
 	}

@@ -10,9 +10,11 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.learnapi.Activitys.BilgilerActivity;
+import com.example.learnapi.Activitys.CommentsActivity;
 import com.example.learnapi.Activitys.PhotosActivity;
 import com.example.learnapi.Activitys.TodoActivity;
 import com.example.learnapi.Adapters.AdapterBilgi;
+import com.example.learnapi.Dialogs.AddBilgiDialog;
 import com.example.learnapi.Models.Bilgiler;
 import com.example.learnapi.RestApi.ManagerAll;
 
@@ -25,7 +27,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnBilgiler, btnTodo, btnPhotos;
+    Button btnBilgiler, btnTodo, btnPhotos, btnComments, btnAddBilgi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +57,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, PhotosActivity.class);
                 startActivity(i);
+            }
+        });
+        btnComments = findViewById(R.id.btn_comments);
+        btnComments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i  = new Intent(MainActivity.this, CommentsActivity.class);
+                startActivity(i);
+            }
+        });
+        btnBilgiler = findViewById(R.id.btn_add_bilgi);
+        btnBilgiler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AddBilgiDialog addBilgiDialog = new AddBilgiDialog();
+                addBilgiDialog.show(getSupportFragmentManager(),"AddBilgiDialog");
             }
         });
 
